@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieImage"
+        android:layout_width="match_parent"
+        android:layout_height="460dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-64dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        style="@style/CustomFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:text="Current Date will display here"
+        android:textSize="20sp" />
+
+    <cn.iwgang.countdownview.CountdownView
+        android:id="@+id/mycountdown"
+        style="@style/CustomFont"
+        android:layout_width="139dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="188dp"
+        android:elevation="8dp"
+        app:isHideTimeBackground="false"
+        app:isShowDay="true"
+        app:isShowHour="false"
+        app:isShowMillisecond="false"
+        app:isShowMinute="false"
+        app:isShowSecond="false"
+        app:isTimeTextBold="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:suffixDay="days left"
+        app:suffixGravity="center"
+        app:suffixHour="h"
+        app:suffixMillisecond="ms"
+        app:suffixMinute="m"
+        app:suffixSecond="s"
+        app:suffixTextColor="#000000"
+        app:suffixTextSize="12sp"
+        app:timeBgColor="#63C5DA"
+        app:timeTextColor="#FFFFFF"
+        app:timeTextSize="40sp" />
+
+    <TextView
+        android:id="@+id/tvWhat"
+        android:layout_width="221dp"
+        android:layout_height="38dp"
+        android:layout_below="@id/textViewContent"
+        android:layout_marginTop="61dp"
+        android:drawableRight="@drawable/next"
+        android:gravity="center"
+        android:text="What should I do?"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvSupport"
+        android:layout_width="284dp"
+        android:layout_height="47dp"
+        android:layout_below="@+id/textViewContent"
+        android:layout_marginTop="103dp"
+        android:drawableRight="@drawable/next"
+        android:gravity="center"
+        android:text="Support Messages for Today"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewContent"
+        style="@style/CustomFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        tools:text="DatePicker" />
+
+
+    <Button
+        android:id="@+id/btnDatePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/roundedbutton"
+        android:text="Date Picker"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/btnReport"
+        android:layout_width="161dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/tvSupport"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/roundedbutton"
+        android:text="Report Symptoms"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/btnCallUs"
+        android:layout_width="104dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textViewContent"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="172dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/btnReport"
+        android:background="@drawable/roundedbutton"
+        android:text="Call Us"
+        android:textColor="#ffffff" />
+
+
+</RelativeLayout>
